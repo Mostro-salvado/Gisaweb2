@@ -1,0 +1,49 @@
+#somos-container .container{
+    text-align: center;
+    padding: 1em;
+    background-color: #ffffff;
+    color: #645959;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+video{
+    display: block;
+    max-width: 63vh;
+    margin: 0 auto;
+}
+
+.container h1{
+    margin: 0.5em;
+    font-family: "Shippori Antique B1";
+
+}
+
+.container p{
+    font-family: "Shippori Antique B1";
+    margin: 1em;
+    max-width: 80%;
+    text-align: center;
+}
+
+
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    video{
+        max-width: 100vh;
+    }
+}
+
+
+/*ESCRITORIO*/
+@media only screen and (min-width: 1024PX){
+    video{
+        max-width: 90vh;
+    }
+
+}
+

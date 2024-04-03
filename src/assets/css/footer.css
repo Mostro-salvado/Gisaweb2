@@ -1,0 +1,75 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 4em;
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.8em;
+    background-color: #9484FF;
+    position: fixed;
+    bottom: 0;
+}
+
+.social {
+    font-size: 2rem;
+}
+.bi-instagram::before{
+    color: #ffffff;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.copyright p ,span{
+    font-family: "Shippori Antique B1";
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.link{
+    text-decoration: none;
+    font-family: "Shippori Antique B1";
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-left: .5rem;
+}
+
+@media screen and (max-width: 550px){
+    .copyright {
+        gap: 0.5rem;
+    }
+    .copyright p ,span{
+        font-size: 0.75rem;
+        margin-left: .2rem;
+    }
+    .link{
+        font-size: 0.75rem;
+        margin-left: .2rem;
+    }
+    .social {
+        font-size: 1rem;
+    }
+}
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .copyright p ,span{
+        font-size: 1rem;
+    }
+    .link{
+        font-size: 1rem;
+    }
+}
+
+/* ESCRITORIO */
+@media only screen and (min-width: 1024PX){
+    span:hover{
+        cursor: pointer;
+    }
+}

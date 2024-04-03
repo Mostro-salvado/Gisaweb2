@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Regular 400;
+    background-color: #F9FAFC;
+    margin-bottom: 3rem;
+}

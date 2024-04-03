@@ -1,0 +1,148 @@
+
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2rem;
+    height: 100vh;
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../statics/industria.webp);
+}
+
+.logo{
+    max-width: 11rem;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 2rem;
+    margin: 1rem;
+    margin-top: 3rem;
+
+}
+.nav-list li span{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding: 10px;
+    font-family: "Shippori Antique B1";
+}
+.nav-list li a:hover{
+    background-color: #faf8f8;
+    border-radius: 15px;
+    color:#000000;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none
+}
+
+@media screen and (max-width: 550px){
+    header{
+        height: 25vh;
+    }
+    .logo{
+        max-width: 7rem;
+    }
+    .scale-up-center{animation:scale-up-center 0.3s; } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: #ffff;
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
+    .cerrar-menu{
+        color: #ffff;
+        margin-top: 0.9rem;
+        margin-right: 1rem;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color:#000000;
+        padding: 2rem 2rem 2rem 1.5rem;
+        box-shadow: 0 0 0  100vmax rgba(0, 0, 0, .5);
+        z-index: 2;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0.5rem;
+        margin-top: 1rem;
+    }
+
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+        padding-top: 3.13rem;
+        height: 100vh;
+    }
+
+
+
+    .nav-list li span{
+        text-decoration: none;
+        color:#ffff;
+        background-color: transparent;
+        padding: 10px;
+        font-size: 1.2rem;
+    
+    }
+    .nav-list li span:hover{
+        background-color: #faf8f8;
+        border-radius: 15px;
+        color:#000000;
+    }
+}
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .logo{
+        max-width: 6rem;
+    }
+    .nav-list li span{
+        font-size: 1rem;
+    }
+    .nav-list{
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+
+}
+
+/* ESCRITORIO */
+@media only screen and (min-width: 1024PX){
+    
+}
