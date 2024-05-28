@@ -4,7 +4,7 @@ header{
     align-items: flex-start;
     justify-content: space-around;
     padding: 2rem;
-    height: 100vh;
+    height: 90vh;
     background-size:cover;
     background-repeat:no-repeat ;
     background-image:linear-gradient(
@@ -20,6 +20,7 @@ header{
 }
 .logo:hover{
     cursor: pointer;
+
 }
 
 .nav-list{
@@ -39,7 +40,7 @@ header{
     padding: 10px;
     font-family: "Shippori Antique B1";
 }
-.nav-list li a:hover{
+.nav-list li span:hover{
     background-color: #faf8f8;
     border-radius: 15px;
     color:#000000;

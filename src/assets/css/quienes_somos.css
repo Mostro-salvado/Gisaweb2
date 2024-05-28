@@ -1,4 +1,4 @@
-#somos-container .container{
+.container{
     text-align: center;
     padding: 1em;
     background-color: #ffffff;
@@ -13,7 +13,7 @@
 
 video{
     display: block;
-    max-width: 50vh;
+    max-width: 60vh;
     margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ video{
 .container p{
     font-family: "Shippori Antique B1";
     margin: 1em;
-    max-width: 80%;
+    max-width:65ch;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ video{
 /*TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     video{
-        max-width: 100vh;
+        max-width: 90%;
     }
 }
 
@@ -42,8 +42,10 @@ video{
 /*ESCRITORIO*/
 @media only screen and (min-width: 1024PX){
     video{
-        max-width: 90vh;
+        max-width: 90%;
     }
-
+    .container p{
+        max-width: 110ch;
+    }
 }
 
